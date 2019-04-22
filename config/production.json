@@ -1,1 +1,19 @@
-{}
+{
+  "modules": {
+    "api": {
+      "enabled": true,
+      "config": {}
+    }
+  },
+  "drivers": {
+    "api": {
+      "enabled": true,
+      "driver": "api",
+      "config": {
+        "ping": true,
+        "swagger": true,
+        "listen": 3000
+      }
+    }
+  }
+}
