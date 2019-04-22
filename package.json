@@ -1,12 +1,12 @@
 {
-  "name": "task",
+  "name": "bidding",
   "version": "0.0.0",
-  "description": "Node.js application",
+  "description": "Node.js application - bidding",
   "private": true,
   "author": "iZonder <izonder@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "yarn && cross-env NODE_ENV=development nodemon --inspect ./src/index.js | bunyan",
+    "dev": "yarn && cross-env NODE_ENV=development nodemon --inspect ./src/index.js | bunyan",
     "app": "NODE_ENV=production node -r @babel/register ./src/index.js",
     "lint": "yarn && eslint .",
     "test": "yarn lint && cross-env NODE_ENV=test nyc mocha -r @babel/register -r chai/register-expect | bunyan"
